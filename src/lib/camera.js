@@ -122,7 +122,7 @@ export class Camera {
         this.cameraTarget = this.noa.ents.createEntity(['position'])
 
         // make the camera follow the cameraTarget entity
-        var eyeOffset = 1.2 * noa.ents.getPositionData(noa.playerEntity).height
+        var eyeOffset = 0.9 * noa.ents.getPositionData(noa.playerEntity).height
         noa.ents.addComponent(this.cameraTarget, 'followsEntity', {
             entity: noa.playerEntity,
             offset: [0, eyeOffset, 0],
